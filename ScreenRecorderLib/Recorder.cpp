@@ -346,7 +346,6 @@ int GameRecorder::Start(String^ processExeName, String^ videoPath, RecorderOptio
 	LONG lRet;
 	CAPTURE_CMDLINE_INFO CaptureCmdInfo;
 	int nLoop = 0;
-	CAPTURE_STATUS captureStatus;
 
 	pin_ptr<const wchar_t> wchProcessExeName = PtrToStringChars(processExeName);
 	pin_ptr<const wchar_t> wchVideoPath = PtrToStringChars(videoPath);
