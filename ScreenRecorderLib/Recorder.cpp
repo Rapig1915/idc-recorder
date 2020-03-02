@@ -401,6 +401,8 @@ int GameRecorder::Stop()
 	if (!IsRecording)
 		return 0;
 
+	IsRecording = false;
+
 	LONG lRet;
 	CAPTURE_CMDLINE_INFO CaptureCmdInfo;
 	int nLoop = 0;
@@ -435,7 +437,6 @@ int GameRecorder::Stop()
 		}
 	}
 
-	IsRecording = false;
 	return 0;
 }
 
